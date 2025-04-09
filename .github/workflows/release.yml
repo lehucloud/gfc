@@ -109,11 +109,11 @@ jobs:
           zip ${{ env.ZIP_FILE }} ${{ env.APP_NAME }}
 
       # Artifact
-      # - name: Upload Artifact ${{ env.ZIP_FILE }}
-      #   uses: actions/upload-artifact@v3
-      #   with:
-      #     name: ${{ env.ZIP_FILE }}
-      #     path: ./build/bin/${{ env.ZIP_FILE }}
+      - name: Upload Artifact ${{ env.ZIP_FILE }}
+        uses: actions/upload-artifact@v3
+        with:
+          name: ${{ env.ZIP_FILE }}
+          path: ./build/bin/${{ env.ZIP_FILE }}
 
       - name: Create Release and Upload Assets
         uses: svenstaro/upload-release-action@v2
