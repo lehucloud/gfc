@@ -1,0 +1,18 @@
+{
+  "$schema": "https://wails.io/schemas/config.v2.json",
+  "name": "悄咪咪云",
+  "outputfilename": "悄咪咪云",
+  "frontend:install": "pnpm install",
+  "frontend:build": "pnpm run build",
+  "frontend:dev:watcher": "pnpm run dev",
+  "frontend:dev:serverUrl": "auto",
+  "nsisType": "single",
+  "author": {
+    "name": "GUI.for.Cores",
+    "email": "GUI.for.Cores@github.com"
+  },
+  "info": {
+    "copyright": "Copyright",
+    "comments": "https://github.com/GUI-for-Cores"
+  }
+}
